@@ -6,7 +6,7 @@ public class PrintTableInCLI {
 		int number,tableLength;
 		number=Integer.parseInt(args[0]);
 		if(args.length <2)
-		{
+		{	
 			tableLength=10;
 		}
 		else 

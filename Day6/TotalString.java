@@ -1,15 +1,15 @@
-package FirstExercise;
+package Day6;
 import java.util.Scanner;
-public class Question8 {
+public class TotalString {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n=scan.nextInt();
+		String str=scan.nextLine();
 		int sum=0;
-		while(n!=0)
+		String a[]=str.split(",");
+		for(int i=0;i<a.length;i++)
 		{
-			 sum=sum*10 +(n%10);
-			 n=n/10;
+			sum+=Integer.parseInt(a[i]);
 		}
 		System.out.println(sum);
 

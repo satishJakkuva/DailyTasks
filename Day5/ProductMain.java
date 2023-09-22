@@ -15,13 +15,11 @@ public class ProductMain {
 		System.out.println(product1.getNetPrice());
 		// upcasting discountedProducts to product
 		Product product2 = discountedProducts;
-		//downcasting from  products to importedProduct
-		ImportedProducts importedProducts1= (ImportedProducts)product1;
-		//downcasting from discountedProduct to product
-		DiscountedProducts discountedProducts1= (DiscountedProducts)product2;
+		// downcasting from products to importedProduct
+		ImportedProducts importedProducts1 = (ImportedProducts) product1;
+		// downcasting from discountedProduct to product
+		DiscountedProducts discountedProducts1 = (DiscountedProducts) product2;
 		System.out.println(discountedProducts1.getNetPrice());
-
-
 	}
 
 }
