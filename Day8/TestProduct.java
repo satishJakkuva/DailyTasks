@@ -14,20 +14,20 @@ public class TestProduct {
 		product[4] = new Product("glasses", 22, 6000);
 		Comparator<Product> comp = new Comparator<Product>() {
 			
-			@Override
-			public int compare(Product i, Product j) {
-				if (i.price > j.price)
-					return 1;
-				else if(i.price<j.price)
-					return -1;
-				else
-					return 0;
-            
-			}
-			
 //			@Override
-//			public int compare(Product m,Product n)
-//			{
+//			public int compare(Product i, Product j) {
+//				if (i.price > j.price)
+//					return 1;
+//				else if(i.price<j.price)
+//					return -1;
+//				else
+//					return 0;
+//            
+//			}
+			
+			@Override
+			public int compare(Product m,Product n)
+			{
 //				if(m.name.length() >n.name.length())
 //				{
 //					return 1;
@@ -37,7 +37,8 @@ public class TestProduct {
 //				}
 //				else 
 //					return 0;
-//			}
+				return n.name.compareTo(m.name);
+			}
 			
 		};
 		Arrays.sort(product,comp);
